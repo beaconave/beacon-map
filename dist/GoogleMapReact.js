@@ -1441,7 +1441,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            });
 	          },
 	          onRemove: function onRemove() {
-	            _reactDom2.default.unmountComponentAtNode(this.div);
+	          	if (this.div) {
+	          		_reactDom2.default.unmountComponentAtNode(this.div);
+	          	}
 	          },
 	          draw: function draw() {
 	            var div = overlay.div;
